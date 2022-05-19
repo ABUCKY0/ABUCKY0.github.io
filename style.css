@@ -1,9 +1,22 @@
 /* a minimalist set of CSS resets */
-
+@font-face {
+  src: url(https://cdn.glitch.com/887c9896-8f4a-43f2-989c-68584c8d1c1a%2FRubik-VariableFont_wght.ttf);
+  font-family:rubik;
+}
+:root {
+  font-size: 18px;
+  --theme-color: #262b2f;
+  --nav-height:4rem;
+  --footer-height:6rem;
+}
 /* default to border-box */
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background-color:var(--theme-color);
+  color:lightgray;
+  text-align:center;
+  font-family: cursive;
 }
 
 *, *:before, *:after {
@@ -22,4 +35,61 @@ img,
 video {
   height: auto;
   max-width: 100%;
+}
+/*.title 
+{
+  justify:center;
+}*/
+/* Add a black background color to the top navigation */
+.topnav {
+ position: fixed;
+  background-color: gray;
+  overflow: hidden;
+  border-radius:10px;
+  bottom: 0;
+  float:center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #6699ff;
+  color: white;
+}
+.button {
+  display:block;
+  float:center;
+  padding:2rem;
+  margin:0.5rem;
+  border:2px darkgray solid;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:-4px 4px darkgray;
+  color:darkgray;
+  text-decoration:none;
+  width:calc(25vw - 2rem);
+  height:8rem;
+}
+
+@media screen and (max-width:1400px) {
+  .button {
+    display: inline-block;
+    width:50%;
+    height:auto;
+  }
 }
