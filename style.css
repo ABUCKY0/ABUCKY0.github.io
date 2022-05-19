@@ -40,18 +40,19 @@ video {
 {
   justify:center;
 }*/
+
 /* Add a black background color to the top navigation */
-.topnav {
+.bottomnav {
  position: fixed;
   background-color: gray;
   overflow: hidden;
   border-radius:10px;
-  bottom: 0;
+  bottom: 15px;
   float:center;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.bottomnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -61,13 +62,13 @@ video {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.bottomnav a:hover {
   background-color: #dddddd;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.bottomnav a.active {
   background-color: #6699ff;
   color: white;
 }
@@ -92,3 +93,4 @@ video {
     width:calc(100vw - 8rem);
   }
 }
+
