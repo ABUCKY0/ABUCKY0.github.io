@@ -49,6 +49,8 @@ video {
   border-radius:10px;
   bottom: 15px;
   float:center;
+  display:flex;
+  align-items:center;
 }
 
 /* Style the links inside the navigation bar */
@@ -94,3 +96,17 @@ video {
   }
 }
 
+.uv {
+   position: fixed;
+    top: 12%;
+    bottom: 0px;
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    border: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 75%;
+  border-radius:10px;
+}
